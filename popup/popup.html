@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>CatBlock 🐱</h1>
+    
+    <div class="toggle-container">
+      <label class="switch">
+        <input type="checkbox" id="enableToggle" checked>
+        <span class="slider round"></span>
+      </label>
+      <span id="statusText">已启用</span>
+    </div>
+    
+    <div class="stats">
+      <p>已替换广告: <span id="replacedCount">0</span></p>
+    </div>
+    
+    <button id="refreshBtn">刷新页面应用设置</button>
+  </div>
+  
+  <script src="popup.js"></script>
+  <script>
+    // Preload cat images at startup
+    function preloadCatImages() {
+      const allImages = [
+        ...CAT_IMAGES.wide,
+        ...CAT_IMAGES.tall,
+        ...CAT_IMAGES.square
+      ];
+      
+      allImages.forEach(imageName => {
+        const img = new Image();
+        img.src = chrome.runtime.getURL(`cats_images/${imageName}`);
+      });
+    }
+  </script>
+</body>
+</html> 
