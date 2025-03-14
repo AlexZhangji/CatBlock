@@ -3,7 +3,7 @@
 [中文说明](./readme_cn.md)
 
 ## What if we... Block Ads with black kittens?
-![cat_in_work](https://github.com/user-attachments/assets/1bb237a1-51be-4603-b071-e811f50ea1b9|width=10)
+![cat_in_work](https://i.imgur.com/AZMPt3q.png|width=10)
 
 A quick vibe coding project for lols	.
 
